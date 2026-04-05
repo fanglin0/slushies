@@ -1,9 +1,17 @@
 {% extends "base.html" %}
+{{ url_for('static', filename='style.css') }}
 {% block title %}Index Page{% endblock %}
 
 {% block content %}
+<html>
+    <head>
+         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+
     <h1>The World's Most Useless Log-in</h1> 
     <p>I want your data!</p>
+    <img src ='https://i.pinimg.com/736x/a9/eb/c4/a9ebc49718ce98c61a8563c945712eee.jpg' style="height:60px; width:auto;">
     <p>Make an account below, and I will store it forEVER 🤑 </p>
 
    
@@ -59,6 +67,7 @@
             });
         });
     </script>
-    <style
+    </body>
+</html>
 
 {% endblock %}
